@@ -1,3 +1,58 @@
+:root{
+  --primary: #fea116;
+  --light:#f1f8ff;
+  --dark:#0f172b;
+}
+
+body{
+  background-color: #f1f8ff;
+}
+
+/* ======= button ======= */
+.btn{
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.btn.btn-primary,
+.btn.btn-secondary{
+  color: #ffffff;
+}
+
+/* ============ section title ============ */
+.section-title{
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::before{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+
+.section-title::after{
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: var(--primary);
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after{
+  display: none;
+}
+
 /* ============== NavBar section ============== */
 .navbar{
   position: fixed;
@@ -23,4 +78,35 @@
       margin-right: 0;
       padding: 10px 0;
   }
+}
+
+.carousel-caption{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 43, 0.7);
+  z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  width: 3rem;
+  height: 3rem;
+}
+
+.booking{
+  position: relative;
+  margin-top: -100px !important;
+  z-index: 1;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.05); /* Increase the scale on hover for a zoom effect */
+  transition: transform 0.3s ease; /* Add transition effect for smoother hover */
 }
