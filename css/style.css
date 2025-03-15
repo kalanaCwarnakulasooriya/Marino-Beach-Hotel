@@ -1,0 +1,26 @@
+/* ============== NavBar section ============== */
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+
+.navbar-nav{
+  margin-left: 400px;
+}
+
+.navbar-nav .nav-link{
+  margin-right: 30px;
+  padding: 25px 0;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;  
+}
+
+@media (max-width: 991.98px) {
+  .navbar-dark .navbar-nav .nav-link  {
+      margin-right: 0;
+      padding: 10px 0;
+  }
+}
