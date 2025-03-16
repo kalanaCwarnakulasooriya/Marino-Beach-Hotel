@@ -53,7 +53,7 @@ body{
   display: none;
 }
 
-/* ============== NavBar section ============== */
+/* ============== Header section ============== */
 .navbar{
   position: fixed;
   width: 100%;
@@ -80,6 +80,8 @@ body{
   }
 }
 
+
+/* ============== Hero section ============== */
 .carousel-caption{
   top: 0;
   left: 0;

@@ -35,7 +35,7 @@
 <body>
 
 
-  <!-- =========================== Navigation Bar ===========================  -->
+  <!-- =========================== Header Section ===========================  -->
   <section>
     <div class="container-xxl bg-white p-0">
       <div class="container-fluid bg-dark px-0 fixed-top ">
@@ -73,7 +73,7 @@
 
 
 
-  <!-- =========================== Header Section ===========================  -->
+  <!-- =========================== Hero Section ===========================  -->
   <section>
     <div class="container-fluid p-0 mb-5" id="Home">
       <div id="header-carouse1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
@@ -143,7 +143,65 @@
         interval: 5000 // Set the interval between slides (in milliseconds)
       });
     </script>
-    
+  </section>
+
+
+  
+    <!-- =========================== Booking Section ===========================  -->
+  <section>
+    <div class="container-fluid booking pb-5 wow fadeIn">
+      <div class="container">
+          <div class="bg-white shadow" style="padding:35px;">
+              <div class="row g-2">
+                  <div class="col-md-10">
+                      <div class="row g-2">
+
+                          <div class="col-md-3 ">
+                              <!-- input -->
+                              <!-- data input -->
+                              <div class="date" id="date1" data-target-input="nearest">
+                                  <input type="text" class="from-control-dateimepicker-input" placeholder="Check in" data-target="#date1" date-toggle="datetimepicker"   >
+                              </div>
+                          </div>
+
+                          <div class="col-md-3 ">
+                              <!-- input -->
+                              <!-- data input -->
+                              <div class="date" id="date2" data-target-input="nearest">
+                                  <input type="text" class="from-control-dateimepicker-input" placeholder="Check out" data-target="#date2" date-toggle="datetimepicker"   >
+                              </div>
+                          </div>
+
+                          <!-- select box -->
+                          <div class="col-md-3 ">
+                              <select name="" id="" class="form-select ">
+                                  <option value="" selected>Adult</option>
+                                  <option value="1">Adult 1</option>
+                                  <option value="2">Adult 2</option>
+                                  <option value="3">Adult 3</option>
+                              </select>
+                          </div>
+
+                          <div class="col-md-3 ">
+                              <select name="" id="" class="form-select ">
+                                  <option value="" selected>Child</option>
+                                  <option value="1">Child 1</option>
+                                  <option value="2">Child 2</option>
+                                  <option value="3">Child 3</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+
+                  <!-- submit button -->
+                  <div class="col-md-2 ">
+                      <button class="btn btn-primary w-100">Submit</button>
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+  </div>
   </section>
 
 
